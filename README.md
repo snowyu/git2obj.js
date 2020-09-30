@@ -13,9 +13,8 @@ Known Issues:
 [![License](https://img.shields.io/npm/l/git2obj.svg)](https://github.com/snowyu/git2obj/blob/master/package.json)
 
 <!-- toc -->
-- [git2obj](#git2obj)
-- [Usage](#usage)
-- [Commands](#commands)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
