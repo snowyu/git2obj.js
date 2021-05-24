@@ -30,7 +30,7 @@ class Git2Obj extends Command {
     if (gitWorkDir) opts.dir = gitWorkDir
     if (gitDir) opts.gitdir = gitDir
     const objects = await gitToObj(opts)
-    const text = JSON.stringify(objects, jsonReplacer, 2)
+    const text = JSON.stringify(objects, jsonReplacer, 2).replace(/"(Uint8Array\.from\(\[.*\]\))"/g, '$1').replace(/"/g, '\'')
 
     if (out) writeFileSync(out, text)
     else this.log(text)
